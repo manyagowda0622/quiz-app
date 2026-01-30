@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #ffffff;
+    width: 380px;
+    max-width: 95%;
+    padding: 25px 22px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+/* Header */
+.quiz-container h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Timer */
+#timer {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+/* Question */
+#question {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option {
+    padding: 12px 15px;
+    background: #f1f3f5;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.25s ease;
+}
+
+.option:hover {
+    background: #dee2e6;
+}
+
+/* Next Button */
+#nextBtn {
+    margin-top: 18px;
+    padding: 10px 25px;
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+#nextBtn:hover {
+    background: #1b4332;
+}
+
+/* Restart Button */
+#restartBtn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #1d3557;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    background: #14213d;
+}
+
+/* Score Section */
+#score {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Wrong Answer Section */
+#score h3 {
+    margin-bottom: 10px;
+}
+
+#score div {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .quiz-container {
+        padding: 20px 16px;
+    }
+
+    #question {
+        font-size: 16px;
+    }
+
+    .option {
+        font-size: 14px;
+    }
+}

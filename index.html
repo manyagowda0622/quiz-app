@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="Task3.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <h3 id="timer"></h3>
+    <h2 id="question">Question text</h2>
+
+    <div class="options">
+        <button class="option" onclick="selectAnswer(0)"></button>
+        <button class="option" onclick="selectAnswer(1)"></button>
+        <button class="option" onclick="selectAnswer(2)"></button>
+        <button class="option" onclick="selectAnswer(3)"></button>
+    </div>
+
+    <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    <div id="score"></div>
+    <button id="restartBtn" onclick="restartQuiz()" style="display:none;">Restart Quiz</button>
+
+
+<script src="Task3.js"></script>
+</body>
+</html>
